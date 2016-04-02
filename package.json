@@ -1,0 +1,27 @@
+{
+  "name": "angular-tinify-s3",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@bitbucket.org/yjimk/angular-tinify-s3.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "homepage": "https://bitbucket.org/yjimk/angular-tinify-s3#readme",
+  "dependencies": {
+    "body-parser": "^1.15.0",
+    "express": "^4.13.4",
+    "method-override": "^2.3.5",
+    "morgan": "^1.7.0",
+    "multer": "^1.1.0",
+    "tinify": "^1.2.0"
+  },
+  "devDependencies": {
+    "bower": "^1.6.9"
+  }
+}

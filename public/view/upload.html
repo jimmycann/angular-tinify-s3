@@ -1,0 +1,35 @@
+<div ng-controller="uploadCtrl as up">
+    <h3>Angular Tinify S3</h3>
+    <form name="up.upload_form">
+        <input
+                type="file"
+                ngf-select
+                ng-model="up.file"
+                name="file"
+                ngf-pattern="'image/*'"
+                accept="image/*"
+                ngf-max-size="5MB"
+        />
+
+        <i ng-show="up.upload_form.file.$error.required">*required</i><br>
+        <i ng-show="up.upload_form.file.$error.maxSize">File too large
+            {{up.file.size / 1000000|number:1}}MB: max 5M</i>
+        <div>
+            <label>Width</label>
+            <input type="number" name="width" ng-model="ulData.wd" required>
+
+            <label>Height</label>
+            <input type="number" name="height" ng-model="ulData.ht">
+
+            <label>Method</label>
+            <select ng-model="ulData.m">
+                <option ng-repeat="type in method" value="{{type.value}}">
+                    {{type.name}}
+                </option>
+            </select>
+        </div>
+        <button type="submit" ng-click="up.submit()">Submit</button><br>
+        <a href="https://tinypng.com/developers/reference#resizing-images" target="_blank">Method Description</a><br>
+        <img ng-if="up.file!=null" ngf-thumbnail="up.file || '/thumb.jpg'"/>
+    </form>
+</div>
