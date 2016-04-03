@@ -1,6 +1,7 @@
 <div ng-controller="uploadCtrl as up">
     <h3>Angular Tinify S3</h3>
     <form name="up.upload_form">
+        <!-- For Angular File Upload -->
         <input
                 type="file"
                 ngf-select
@@ -13,10 +14,12 @@
 
         <i ng-show="up.upload_form.file.$error.required">*required</i><br>
         <i ng-show="up.upload_form.file.$error.maxSize">File too large
-            {{up.file.size / 1000000|number:1}}MB: max 5M</i>
+            {{up.file.size / 1000000|number:1}}MB: max 5MB</i>
+
+        <!-- Parameters for the Tinify API-->
         <div>
             <label>Width</label>
-            <input type="number" name="width" ng-model="ulData.wd" required>
+            <input type="number" name="width" ng-model="ulData.wd">
 
             <label>Height</label>
             <input type="number" name="height" ng-model="ulData.ht">
@@ -29,6 +32,7 @@
             </select>
         </div>
         <button type="submit" ng-click="up.submit()">Submit</button><br>
+
         <a href="https://tinypng.com/developers/reference#resizing-images" target="_blank">Method Description</a><br>
         <img ng-if="up.file!=null" ngf-thumbnail="up.file || '/thumb.jpg'"/>
     </form>

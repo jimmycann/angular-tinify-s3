@@ -22,6 +22,7 @@
     "tinify": "^1.2.0"
   },
   "devDependencies": {
-    "bower": "^1.6.9"
+    "bower": "^1.6.9",
+    "nodemon": "^1.9.1"
   }
 }
