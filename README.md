@@ -1,11 +1,11 @@
 # Angular Tinify S3 - Example
 
-## Dependencies
+### Dependencies
 NodeJS  
 Bower (not essential, but makes it easier for this guide)
 
 
-## Quick Start
+### Quick Start
 Clone this repo
 ```
 cd angular-tinify-s3
