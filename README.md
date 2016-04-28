@@ -1,12 +1,11 @@
 # Angular Tinify S3 - Example
 
 ## Dependencies
-NodeJS
-
+NodeJS  
 Bower (not essential, but makes it easier for this guide)
 
 
-### Quick Start
+## Quick Start
 Clone this repo
 ```
 cd angular-tinify-s3
@@ -17,15 +16,11 @@ bower install
 
 Jump into your favourite editor and change the following parameters in /app/routes.js (Starts at line 64)
 
-YOUR_TINIFY_API_KEY
-
-YOUR_AWS_ACCESS_KEY_ID
-
-YOUR_AWS_SECRET_ACCESS_KEY
-
-your-bucket-region
-
-your-bucket-name
+YOUR_TINIFY_API_KEY  
+YOUR_AWS_ACCESS_KEY_ID  
+YOUR_AWS_SECRET_ACCESS_KEY  
+your-bucket-region  
+your-bucket-name  
 
 ```
 cd ../
